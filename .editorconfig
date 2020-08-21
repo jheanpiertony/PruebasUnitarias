@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# IDE0058: El valor de la expresión no se utiliza nunca.
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
+
+# S2479: Whitespace and control characters in string literals should be explicit
+dotnet_diagnostic.S2479.severity = none
