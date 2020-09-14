@@ -15,13 +15,29 @@ namespace PruebaMVC.Controllers
     public class ActoresController : Controller
     {
         #region Campos
-        private readonly IAlmacenadorArchivos almacenadorArchivos;
+        private IAlmacenadorArchivos almacenadorArchivos;
+        private IMapper mapper;
         private readonly ApplicationDbContext context;
-        private readonly IMapper mapper;
         private readonly string contenedor = "actores";// La carpeta donde se guarda la foto de actores
         #endregion
 
-        //public ApplicationDbContext context { get; set; }
+        #region Propiedades
+        public IMapper Mapper
+        {
+            get { return mapper; }
+            set { mapper = value; }
+        }
+        //public ApplicationDbContext Context
+        //{
+        //    get { return context; }
+        //    set { context = value; }
+        //}
+        public IAlmacenadorArchivos AlmacenadorArchivos
+        {
+            get { return almacenadorArchivos; }
+            set { almacenadorArchivos = value; }
+        }
+        #endregion
 
         #region Constructor
         public ActoresController(ApplicationDbContext context,

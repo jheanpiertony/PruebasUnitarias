@@ -15,11 +15,5 @@
   <ItemGroup><!--https://stackoverflow.com/questions/60168983/class-library-standard-2-1-or-core-3-1-namespace-name-iwebhostenvironment-->
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
-  
-    <ItemGroup>
-    <Reference Include="Microsoft.AspNetCore.Analyzers">
-      <HintPath>..\..\..\..\..\..\Program Files\dotnet\sdk\3.1.201\Sdks\Microsoft.NET.Sdk.Web\analyzers\cs\Microsoft.AspNetCore.Analyzers.dll</HintPath>
-    </Reference>   
-  </ItemGroup>
 
 </Project>
